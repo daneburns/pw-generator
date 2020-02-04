@@ -18,3 +18,7 @@ body {
 #exampleFormControlTextarea1 {
     border-style: dashed;
 }
+
+.hidden {
+    display: none;
+}

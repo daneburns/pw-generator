@@ -29,7 +29,8 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-8">
                         <div class="form-group">
-                            <textarea class="form-control text-center" id="exampleFormControlTextarea1" rows="5" placeholder='Your secure password' ></textarea>
+                            <textarea class="form-control text-center" id="exampleFormControlTextarea1" rows="5"
+                                placeholder='Your secure password'></textarea>
                         </div>
                     </div>
                 </div>
@@ -39,7 +40,44 @@
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center p-3">
-                    <div class="button btn btn-danger rounded-pill" id='generatePassword'><h4 class='p-2'>Generate Password</h4></div>
+                    <div class="button btn btn-danger rounded-pill" id='generatePassword' onclick='myFunction()'>
+                        <h4 class='p-2'>Generate Password</h4>
+                    </div>
+                </div>
+                <div class="container invisible" id='passwordCriteria'>
+                    <div class='row justify-content-center'>
+                        <h3>Please check all you wish to apply</h3>
+                    </div>
+                    <div class='row justify-content-center'>
+                        <div class="col">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class='row justify-content-center'>
+                        <p>Would you like to include uppercase letters?</p>
+                    </div>
+                    <div class="row justify-content-center">
+
+                        <div class="form-check mx-2">
+                            <input class="form-check-input" type="checkbox" value="" id="checkYes" onclick='myFunction3()'>
+                            <label class="form-check-label" for="defaultCheck1">
+                                Yes
+                            </label>
+                        </div>
+
+                        <div class="form-check mx-2" id='checkNoForm'>
+                            <input class="form-check-input" type="checkbox" value="" id="checkNo"'>
+                            <label class="form-check-label" for="defaultCheck1">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center p-2">
+                        <div class="button btn btn-danger rounded-pill btn-sm" id='criteriaSubmit'
+                            onclick='myFunction2()'>
+                            <p>Submit</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,4 +85,5 @@
 </body>
 <script src="script.js">
 </script>
+
 </html>
