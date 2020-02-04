@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class=bg>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h1>Password Generator</h1>
+            </div>
+            <div class='container bg-light shadow-lg' id='passwordContainer'>
+                <div class="row mt-4 mx-2 p-4">
+                    <h2>Generate a Password</h2>
+                </div>
+                <div class="row mt-n2">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8">
+                        <div class="form-group">
+                            <textarea class="form-control text-center" id="exampleFormControlTextarea1" rows="5" placeholder='Your secure password' ></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center p-3">
+                    <div class="button btn btn-danger rounded-pill" id='generatePassword'><h4 class='p-2'>Generate Password</h4></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>
