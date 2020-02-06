@@ -53,37 +53,57 @@
                             <hr>
                         </div>
                     </div>
-                    <div class='row justify-content-center'>
-                        <p>Would you like to include uppercase letters?</p>
-                    </div>
                     <div class="row justify-content-center">
 
                         <div class="form-check mx-2">
-                            <input class="form-check-input" type="checkbox" value="" id="checkYes" onclick='myFunction3()'>
+                            <input class="checkYes" type="checkbox" value="option1" name='uppercase'>
                             <label class="form-check-label" for="defaultCheck1">
-                                Yes
+                                Uppercase Letters
                             </label>
                         </div>
 
                         <div class="form-check mx-2" id='checkNoForm'>
-                            <input class="form-check-input" type="checkbox" value="" id="checkNo"'>
+                            <input class="form-check-input" type="checkbox" value="" name='special'>
                             <label class="form-check-label" for="defaultCheck1">
-                                No
+                                Special Characters
                             </label>
                         </div>
-                    </div>
-                    <div class="row justify-content-center p-2">
-                        <div class="button btn btn-danger rounded-pill btn-sm" id='criteriaSubmit'
-                            onclick='myFunction2()'>
-                            <p>Submit</p>
+                        <div class="form-check mx-2" id='checkNoForm'>
+                            <input class="form-check-input" type="checkbox" value="" name='lowercase'>
+                            <label class="form-check-label" for="defaultCheck1">
+                                Lowercase Letters
+                            </label>
                         </div>
+                        <div class="form-check mx-2" id='checkNoForm'>
+                            <input class="form-check-input" type="checkbox" value="" name='numbers'>
+                            <label class="form-check-label" for="defaultCheck1">
+                               Numbers
+                            </label>
+                        </div>
+                        
                     </div>
+                    <div class="row justify-content-center">
+                        <div class="form-group justify-content-center p-2">
+                            <label for="exampleInputEmail1">Please select length of password</label>
+                            <input type="number" min ='8' max='126' class="form-control" id="integerInput" placeholder="8-128">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                          </div>
+                        </div>
+                    <div class="row justify-content-center p-2">
+                    <button id="submit" class="btn btn-danger" onclick='myFunction3()'>
+                        Make a password
+                      </button>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script src="script.js">
-</script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+
 
 </html>
