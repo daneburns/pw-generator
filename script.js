@@ -53,25 +53,31 @@ document.getElementById("submit").addEventListener("click", function(e) {
 
      if(passwordResult.special === true) {
       finalPw.push(specialCharacters[Math.floor(Math.random() * specialCharacters.length)])
-      passwordResult.special = false;
+      
     }
     if(passwordResult.numbers === true) {
       finalPw.push(numericArray[Math.floor(Math.random() * numericArray.length)])
-      passwordResult.numbers = false
+     
     }
     if(passwordResult.uppercase === true) {
       finalPw.push(uppercaseArray[Math.floor(Math.random() * uppercaseArray.length)])
-      passwordResult.uppercase = false;
+     
     }
     if(passwordResult.lowercase === true) {
       finalPw.push(lowercaseArray[Math.floor(Math.random() * lowercaseArray.length)])
-      passwordResult.numbers = false
+      
     }
-    var pwString = finalPw.join().replace(/,/g, '')
-    var field = document.getElementById('exampleFormControlTextarea1')
-    field.innerText = pwString
   }
 
+  function truncate(str, length) {
+
+  }
+    
+  var pwString = finalPw.join().replace(/,/g, '')
+  var pwShorten = pwString.slice(0, passwordResult.pwLength)
+  console.log(pwShorten)
+    var field = document.getElementById('exampleFormControlTextarea1')
+    field.innerText = pwShorten
 });
 
 function myFunction3() {
